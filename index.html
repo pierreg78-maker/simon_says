@@ -177,7 +177,7 @@
   <h1>Atelier Mémoire</h1>
   <p>Simon : Retrouvez la bonne séquence</p>
  <div class="score-wrap">
-    <span id="score">0</span>
+    <p>Score : </p> <span id="score">0</span>
     <span id="best"></span>
   </div>
 </header>
@@ -283,7 +283,7 @@ async function playSequence() {
     await delay(80);
   }
 
-  setStatus('À toi !');
+  setStatus('À vous !');
   playerIndex = 0;
   disableTiles(false);
 }
