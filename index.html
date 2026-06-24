@@ -178,7 +178,7 @@
   <p>Simon : Retrouvez la bonne séquence</p>
  <div class="score-wrap">
     <p>Score : </p> <span id="score">0</span>
-    <span id="best"></span>
+        <p>Meilleur score : </p> <span id="best"></span>
   </div>
 </header>
 
@@ -273,7 +273,7 @@ function disableTiles(state) {
 
 async function playSequence() {
   disableTiles(true);
-  setStatus('Observe…');
+  setStatus('Observez…');
   await delay(600);
 
   const speed = Math.max(250, 500 - sequence.length * 15);
